@@ -44,7 +44,6 @@ public class Logging {
         logger.log(Level.INFO, "\n\t->"+msg);
         fh.close();
     }
-
     public static void log(String file, String msg) {
         logger.setUseParentHandlers(false);
         FileHandler fh = null;
@@ -53,7 +52,6 @@ public class Logging {
             logger.addHandler(fh);
             fh.setFormatter(new SimpleFormatter() {
                 private static final String format = "[%1$tF %1$tT] [%2$-7s] %3$s %n";
-
                 @Override
                 public synchronized String format(LogRecord lr) {
                     return String.format(format, new Date(lr.getMillis()),
@@ -65,8 +63,7 @@ public class Logging {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-        logger.log(Level.INFO, "\n\t>>"+msg);
+        logger.log(Level.INFO, "\nADD\t>>\t"+msg);
         fh.close();
     }
     public static void log_test(String file, String msg) throws IOException {

@@ -1,13 +1,13 @@
 package model;
 
-public enum Color {
+public enum My_color {
 	light("light"),
 	dark("dark"),
 	colored("colored");
 	
 	private String color;
 	
-	Color(String color)
+	My_color(String color)
 	{
        this.color = color;
 	}

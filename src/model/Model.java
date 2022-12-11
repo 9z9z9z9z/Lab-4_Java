@@ -266,61 +266,61 @@ public class Model {
         System.out.println("1 | 10 добавлений     | " + (endTime - startTime) + " milliseconds");
         removeLinenList(10, linenArrayList);
 
-//        startTime = System.currentTimeMillis();
-//        testCore.testAddArrayList(100, "app.log.2", linenArrayList);
-//        endTime = System.currentTimeMillis();
-//        System.out.println("2 | 100 добавлений    | " + (endTime - startTime) + " milliseconds");
-//        removeLinenList(100, linenArrayList);
-
-//        startTime = System.currentTimeMillis();
-//        testCore.testAddArrayList(1000, "app.log.3", linenArrayList);
-//        endTime = System.currentTimeMillis();
-//        System.out.println("3 | 1000 добавлений   | " + (endTime - startTime) + " milliseconds");
-//        removeLinenList(1000, linenArrayList);
-//
-//        startTime = System.currentTimeMillis();
-//        testCore.testAddArrayList(10000, "app.log.4", linenArrayList);
-//        endTime = System.currentTimeMillis();
-//        System.out.println("3 | 10000 добавлений   | " + (endTime - startTime) + " milliseconds");
-//        removeLinenList(10000, linenArrayList);
-//
         startTime = System.currentTimeMillis();
-        testCore.testAddArrayList(100000, "app.log.5", linenArrayList);
+        testCore.testAddArrayList(100, "app.log.2", linenArrayList);
         endTime = System.currentTimeMillis();
-        System.out.println("3 | 100000 добавлений   | " + (endTime - startTime) + " milliseconds");
-        removeLinenList(100000, linenArrayList);
+        System.out.println("2 | 100 добавлений    | " + (endTime - startTime) + " milliseconds");
+        removeLinenList(100, linenArrayList);
+
+        startTime = System.currentTimeMillis();
+        testCore.testAddArrayList(1000, "app.log.3", linenArrayList);
+        endTime = System.currentTimeMillis();
+        System.out.println("3 | 1000 добавлений   | " + (endTime - startTime) + " milliseconds");
+        removeLinenList(1000, linenArrayList);
+
+        startTime = System.currentTimeMillis();
+        testCore.testAddArrayList(10000, "app.log.4", linenArrayList);
+        endTime = System.currentTimeMillis();
+        System.out.println("3 | 10000 добавлений   | " + (endTime - startTime) + " milliseconds");
+        removeLinenList(10000, linenArrayList);
+//
+//        startTime = System.currentTimeMillis();
+//        testCore.testAddArrayList(100000, "app.log.5", linenArrayList);
+//        endTime = System.currentTimeMillis();
+//        System.out.println("3 | 100000 добавлений   | " + (endTime - startTime) + " milliseconds");
+//        removeLinenList(100000, linenArrayList);
 
         // ====================== HashMap ============================
 
-//        startTime = System.currentTimeMillis();
-//        testCore.testAddHashMap(10, "app.log.6", linenHashMap);
-//        endTime = System.currentTimeMillis();
-//        System.out.println("1 | 10 добавлений     | " + (endTime - startTime) + " milliseconds");
-//        removeLinenMap(10, linenHashMap);
-//
-//        startTime = System.currentTimeMillis();
-//        testCore.testAddHashMap(100, "app.log.7", linenHashMap);
-//        endTime = System.currentTimeMillis();
-//        System.out.println("2 | 100 добавлений    | " + (endTime - startTime) + " milliseconds");
-//        removeLinenMap(100, linenHashMap);
-//
-//        startTime = System.currentTimeMillis();
-//        testCore.testAddHashMap(1000, "app.log.8", linenHashMap);
-//        endTime = System.currentTimeMillis();
-//        System.out.println("3 | 1000 добавлений   | " + (endTime - startTime) + " milliseconds");
-//        removeLinenMap(1000, linenHashMap);
-//
-//        startTime = System.currentTimeMillis();
-//        testCore.testAddHashMap(10000, "app.log.9", linenHashMap);
-//        endTime = System.currentTimeMillis();
-//        System.out.println("4 | 10000 добавлений  | " + (endTime - startTime) + " milliseconds");
-//        removeLinenMap(10000, linenHashMap);
-//
         startTime = System.currentTimeMillis();
-        testCore.testAddHashMap(100000, "app.log.10", linenHashMap);
+        testCore.testAddHashMap(10, "app.log.6", linenHashMap);
         endTime = System.currentTimeMillis();
-        System.out.println("5 | 100000 добавлений | " + (endTime - startTime) + " milliseconds");
-        removeLinenMap(100000, linenHashMap);
+        System.out.println("1 | 10 добавлений     | " + (endTime - startTime) + " milliseconds");
+        removeLinenMap(10, linenHashMap);
+
+        startTime = System.currentTimeMillis();
+        testCore.testAddHashMap(100, "app.log.7", linenHashMap);
+        endTime = System.currentTimeMillis();
+        System.out.println("2 | 100 добавлений    | " + (endTime - startTime) + " milliseconds");
+        removeLinenMap(100, linenHashMap);
+
+        startTime = System.currentTimeMillis();
+        testCore.testAddHashMap(1000, "app.log.8", linenHashMap);
+        endTime = System.currentTimeMillis();
+        System.out.println("3 | 1000 добавлений   | " + (endTime - startTime) + " milliseconds");
+        removeLinenMap(1000, linenHashMap);
+
+        startTime = System.currentTimeMillis();
+        testCore.testAddHashMap(10000, "app.log.9", linenHashMap);
+        endTime = System.currentTimeMillis();
+        System.out.println("4 | 10000 добавлений  | " + (endTime - startTime) + " milliseconds");
+        removeLinenMap(10000, linenHashMap);
+
+//        startTime = System.currentTimeMillis();
+//        testCore.testAddHashMap(100000, "app.log.10", linenHashMap);
+//        endTime = System.currentTimeMillis();
+//        System.out.println("5 | 100000 добавлений | " + (endTime - startTime) + " milliseconds");
+//        removeLinenMap(100000, linenHashMap);
 
         System.out.println("Тесты для HashMap успешно пройдены!");
         Logging.log("Tests for ArrayList were successfully passed!");
@@ -328,32 +328,31 @@ public class Model {
 
     private static void removeLinenList(int count, ArrayList<Linen> linenArrayList) {
         Random random = new Random();
-        String nums = "";
-        String times = "";
-
+        long global_start_time = System.nanoTime();
         for (int i = 0; i < Math.round(count * 0.1); i++) {
             int num = random.nextInt(0, count - i - 1);
             long startTime = System.nanoTime();
             linenArrayList.remove(num);
             long time = System.nanoTime() - startTime;
-            if (count == 100000) {
-                try(FileWriter writer = new FileWriter("11.txt", true))
-                {
-                    writer.write(String.valueOf(num) + "\n");
-                    writer.flush();
-                }
-                catch(IOException ex){
-                    System.out.println(ex.getMessage());
-                }
-                try(FileWriter writer = new FileWriter("12.txt", true))
-                {
-                    writer.write(String.valueOf(time) + "\n");
-                    writer.flush();
-                }
-                catch(IOException ex){
-                    System.out.println(ex.getMessage());
-                }
+            try(FileWriter writer = new FileWriter( String.valueOf(count) + "_index_linen.txt", true)) {
+                writer.write(String.valueOf(num) + "\n");
+                writer.flush();
+            } catch(IOException ex){
+                System.out.println(ex.getMessage());
             }
+            try(FileWriter writer = new FileWriter( String.valueOf(count) + "_times_list_linen.txt", true)) {
+                writer.write(String.valueOf(time) + "\n");
+                writer.flush();
+            } catch(IOException ex){
+                System.out.println(ex.getMessage());
+            }
+        }
+        long global_end_time = System.nanoTime();
+        try(FileWriter writer = new FileWriter( String.valueOf(count) + "_times_list_linen.txt", true)) {
+            writer.write(String.valueOf(global_end_time - global_start_time) + "\n");
+            writer.flush();
+        } catch(IOException ex){
+            System.out.println(ex.getMessage());
         }
     }
     private static void removeLinenMap(int count, Map<String, Linen> linenHashMap) {
@@ -363,23 +362,17 @@ public class Model {
             long startTime = System.nanoTime();
             linenHashMap.remove(num);
             long time = System.nanoTime() - startTime;
-            if (count == 100000) {
-                try(FileWriter writer = new FileWriter("13.txt", true))
-                {
-                    writer.write(String.valueOf(num) + "\n");
-                    writer.flush();
-                }
-                catch(IOException ex){
-                    System.out.println(ex.getMessage());
-                }
-                try(FileWriter writer = new FileWriter("14.txt", true))
-                {
-                    writer.write(String.valueOf(time) + "\n");
-                    writer.flush();
-                }
-                catch(IOException ex){
-                    System.out.println(ex.getMessage());
-                }
+            try(FileWriter writer = new FileWriter( String.valueOf(count) + "_index_map.txt", true)) {
+                writer.write(String.valueOf(num) + "\n");
+                writer.flush();
+            } catch(IOException ex){
+                System.out.println(ex.getMessage()); }
+
+            try(FileWriter writer = new FileWriter(String.valueOf(count) + "_times_map.txt", true)) {
+                writer.write(String.valueOf(time) + "\n");
+                writer.flush();
+            } catch(IOException ex){
+                System.out.println(ex.getMessage());
             }
         }
     }

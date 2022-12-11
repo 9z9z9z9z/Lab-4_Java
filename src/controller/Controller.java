@@ -1,8 +1,5 @@
 package controller;
 
-import java.io.PrintWriter;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -27,12 +24,12 @@ public class Controller {
 		int tmptI = random.nextInt(30, 100);
 		return new Linen(tmptW, tmptI);
 	}
-	public static Color inputColor() throws java.lang.IllegalArgumentException {
+	public static My_color inputColor() throws java.lang.IllegalArgumentException {
 		while (true) {
 			Scanner sc = new Scanner(System.in);
 			System.out.println("Input color of linen: dark / light / colored\n");
 		    try{
-		    	return Color.valueOf(sc.nextLine());
+		    	return My_color.valueOf(sc.nextLine());
 		    }
 		    catch (IllegalArgumentException exc){
 		    	System.out.println("Incorrect input");
@@ -77,8 +74,8 @@ public class Controller {
 	    System.out.println("=========================================\n");
 	    int tempW = inputInt("Input temperature of washing\n");
 	    int tempI = inputInt("Input temperature of ironing\n");
-	    Color color = inputColor();
-	    ColoredLinen ans = new ColoredLinen(tempW, tempI, color);
+	    My_color mycolor = inputColor();
+	    ColoredLinen ans = new ColoredLinen(tempW, tempI, mycolor);
 	    return  ans;
 	}
 	public static WashingMachine inputWS() {

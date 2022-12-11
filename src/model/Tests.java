@@ -16,7 +16,7 @@ public class Tests {
             //System.out.println(Math.round(i * 100 / count) + "%");
             linens.add(tmp);
             long endTime = System.nanoTime();
-            Logging.log_test(file, String.valueOf(endTime - startTime));
+            Logging.log(file, String.valueOf(endTime - startTime));
         }
         System.gc();
     }
@@ -27,7 +27,7 @@ public class Tests {
             linenHashMap.put(String.valueOf(i), testLinen);
             //System.out.println(Math.round(i * 100 / count) + "%");
             long endTime = System.nanoTime();
-            Logging.log_test(file, String.valueOf(endTime - startTime));
+            Logging.log(file, String.valueOf(endTime - startTime));
         }
         System.gc();
     }
